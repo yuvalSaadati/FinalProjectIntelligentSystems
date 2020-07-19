@@ -1,0 +1,77 @@
+
+    (define (problem maze_food-prob0)
+    (:domain  maze_food)
+    (:objects
+        
+	g4
+	g3
+	g2
+	g1
+	g0
+	food2
+	food1
+	c3
+	d4
+	person1
+	c00
+	c2
+	c1
+	c0
+	d2
+	d3
+	d0
+	d1)
+(:init
+	(south d1 d2)
+	(south c3 d0)
+	(south g1 g0)
+	(south g3 g2)
+	(south g4 g3)
+	(south g0 c3)
+	(south d2 d3)
+	(south d0 d1)
+	(south g2 g1)
+	(south d3 d4)
+	(north d3 d2)
+	(north c3 g0)
+	(north d4 d3)
+	(north d2 d1)
+	(north g2 g3)
+	(north g3 g4)
+	(north d1 d0)
+	(north g0 g1)
+	(north d0 c3)
+	(north g1 g2)
+	(west c3 c2)
+	(west c0 c00)
+	(west c2 c1)
+	(west c1 c0)
+	(person person1)
+	(food food1)
+	(food food2)
+	(east c2 c3)
+	(east c00 c0)
+	(east c0 c1)
+	(east c1 c2)
+	(empty c1)
+	(empty c3)
+	(empty c0)
+	(empty d2)
+	(empty d4)
+	(empty d3)
+	(empty g4)
+	(empty d0)
+	(empty g3)
+	(empty d1)
+	(empty g2)
+	(empty g1)
+	(empty g0)
+	(empty c00)
+	(empty c2)
+	(at person1 c00)
+            )
+    (:goal
+        (and (has person1 food1))
+        )
+    )
+    
